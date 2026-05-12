@@ -1,4 +1,4 @@
-# 📊 Smart BI 
+# 📊 Intelligent Data Analysis Automation System
 
 <p align="center">
   <img src="Frontend/Assets/img/logomci.jpeg" width="120" alt="MCI Logo">
@@ -20,7 +20,7 @@
 
 ## 🧠 Project Overview
 
-The Smart BI Reporting System is an intelligent ecosystem designed to bridge the gap between raw data and executive decision-making. It transforms standard Excel sales data into high-level strategic insights through a professional data analyst's workflow.
+The Intelligent Data Analysis Automation System is an intelligent ecosystem designed to bridge the gap between raw data and executive decision-making. It transforms standard Excel sales data into high-level strategic insights through a professional data analyst's workflow.
 
 🔄 The Intelligent Pipeline:
 - 🔐 Secure Auth: Multi-user system with encrypted passwords (Bcrypt).
