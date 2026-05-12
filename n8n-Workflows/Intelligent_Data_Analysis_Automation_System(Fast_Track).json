@@ -3,7 +3,7 @@
   "nodes": [
     {
       "parameters": {
-        "content": "# Smart Business Intelligence Reporting System\n\n## Graduation Project | MCI Academy 2026",
+        "content": "# Intelligent Data Analysis Automation System \n## Graduation Project | MCI Academy 2026",
         "height": 176,
         "width": 896,
         "color": 4
@@ -11,8 +11,8 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        400,
-        112
+        896,
+        256
       ],
       "id": "aa169bab-4bbb-408f-b9e5-91550e6e999c",
       "name": "Sticky Note"
@@ -27,7 +27,7 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        400,
+        512,
         352
       ],
       "id": "40518c56-39bc-42fa-b05b-2ffd8be29be3",
@@ -58,8 +58,8 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2.1,
       "position": [
-        416,
-        608
+        512,
+        496
       ],
       "id": "dd03ee1d-cc78-46e8-a251-4c8925fe3e95",
       "name": "Receive Sales File",
@@ -74,8 +74,8 @@
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1.1,
       "position": [
-        688,
-        608
+        720,
+        496
       ],
       "id": "57719f2c-5e52-4575-844b-f4e9fba22083",
       "name": "Parse Excel Data"
@@ -87,8 +87,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1488,
-        592
+        1360,
+        480
       ],
       "id": "f4182307-cdd3-4e09-b237-64d08cbabf56",
       "name": "Calculate Quick Metrics"
@@ -100,8 +100,8 @@
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.5,
       "position": [
-        1808,
-        592
+        1552,
+        480
       ],
       "id": "a056051d-0d41-44f7-b35a-985f3dd7e2b1",
       "name": "UI Instant Response"
@@ -110,15 +110,15 @@
       "parameters": {
         "fromEmail": "abdelwahabshandy@gmail.com",
         "toEmail": "={{ $('Calculate Quick Metrics').item.json.userEmail }}",
-        "subject": "📑 التقرير السريع لمبيعاتك | Smart BI System",
-        "html": "=<div dir=\"rtl\" style=\"font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; padding: 20px;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #0f172a; padding: 30px; border-radius: 15px 15px 0 0; text-align: center;\">\n        <h1 style=\"color: #ffffff; margin: 0; font-size: 28px; letter-spacing: 1px;\">Smart BI <span style=\"color: #3b82f6;\">System</span></h1>\n        <p style=\"color: #94a3b8; margin-top: 10px; font-size: 14px;\">قطاع تحليلات المبيعات اللحظية - MCI Academy</p>\n    </div>\n\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-bottom: 1px solid #e2e8f0;\">\n        <div style=\"background-color: #fff7ed; border-right: 5px solid #f59e0b; padding: 15px; border-radius: 8px;\">\n            <h3 style=\"color: #9a3412; margin: 0 0 5px 0; font-size: 16px;\">💡 تحليل المحرك الذكي:</h3>\n            <p style=\"color: #475569; font-size: 15px; margin: 0; line-height: 1.6;\">{{ $json.insight }}</p>\n        </div>\n    </div>\n\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px;\">\n        <table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n            <tr>\n                <td width=\"48%\" style=\"background-color: #eff6ff; padding: 20px; border-radius: 12px; text-align: center; border: 1px solid #dbeafe;\">\n                    <p style=\"color: #1e40af; margin: 0; font-size: 13px; font-weight: bold;\">إجمالي الإيرادات</p>\n                    <h2 style=\"color: #2563eb; margin: 10px 0 0 0; font-size: 22px;\">{{ $json.totalSales }}</h2>\n                </td>\n                <td width=\"4%\"></td>\n                <td width=\"48%\" style=\"background-color: #f0fdf4; padding: 20px; border-radius: 12px; text-align: center; border: 1px solid #dcfce7;\">\n                    <p style=\"color: #166534; margin: 0; font-size: 13px; font-weight: bold;\">عدد العمليات</p>\n                    <h2 style=\"color: #16a34a; margin: 10px 0 0 0; font-size: 22px;\">{{ $json.ordersCount }}</h2>\n                </td>\n            </tr>\n        </table>\n    </div>\n\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 0 20px 20px 20px; border-radius: 0 0 15px 15px;\">\n        <table width=\"100%\" style=\"border-collapse: collapse; background-color: #fcfcfc; border-radius: 10px; border: 1px solid #f1f5f9;\">\n            <tr>\n                <td style=\"padding: 15px; color: #64748b; border-bottom: 1px solid #f1f5f9; vertical-align: top;\">🥇 المنتج الأكثر طلباً</td>\n                <td style=\"padding: 15px; color: #0f172a; font-weight: bold; text-align: left; border-bottom: 1px solid #f1f5f9;\">{{ $json.topProduct }}</td>\n            </tr>\n            <tr>\n                <td style=\"padding: 15px; color: #64748b; border-bottom: 1px solid #f1f5f9; vertical-align: top;\">📊 قائمة الـ 5 الأوائل</td>\n                <td style=\"padding: 15px; color: #3b82f6; font-size: 14px; text-align: left; border-bottom: 1px solid #f1f5f9; line-height: 1.8;\">\n                    {{ $json.top5Products }}\n                </td>\n            </tr>\n            <tr>\n                <td style=\"padding: 15px; color: #64748b; vertical-align: top;\">⏰ وقت الذروة</td>\n                <td style=\"padding: 15px; color: #f59e0b; font-weight: bold; text-align: left;\">{{ $json.peakHour }}</td>\n            </tr>\n        </table>\n\n        <div style=\"text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #f1f5f9;\">\n            <p style=\"color: #94a3b8; font-size: 12px; margin: 0;\">هذا التقرير تم توليده تلقائياً كجزء من مشروع التخرج</p>\n            <p style=\"color: #475569; font-size: 13px; font-weight: bold; margin: 5px 0;\"> Smart BI System Team | MCI Academy 2026</p>\n        </div>\n    </div>\n</div>",
+        "subject": "📑 التقرير السريع لمبيعاتك | Intelligent Data Analysis Automation System",
+        "html": "=<div dir=\"rtl\" style=\"font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; padding: 20px;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #0f172a; padding: 30px; border-radius: 15px 15px 0 0; text-align: center;\">\n        <h1 style=\"color: #ffffff; margin: 0; font-size: 28px; letter-spacing: 1px;\">Intelligent Data Analysis Automation <span style=\"color: #3b82f6;\">System</span></h1>\n        <p style=\"color: #94a3b8; margin-top: 10px; font-size: 14px;\">قطاع تحليلات المبيعات اللحظية - MCI Academy</p>\n    </div>\n\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-bottom: 1px solid #e2e8f0;\">\n        <div style=\"background-color: #fff7ed; border-right: 5px solid #f59e0b; padding: 15px; border-radius: 8px;\">\n            <h3 style=\"color: #9a3412; margin: 0 0 5px 0; font-size: 16px;\">💡 تحليل المحرك الذكي:</h3>\n            <p style=\"color: #475569; font-size: 15px; margin: 0; line-height: 1.6;\">{{ $json.insight }}</p>\n        </div>\n    </div>\n\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px;\">\n        <table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n            <tr>\n                <td width=\"48%\" style=\"background-color: #eff6ff; padding: 20px; border-radius: 12px; text-align: center; border: 1px solid #dbeafe;\">\n                    <p style=\"color: #1e40af; margin: 0; font-size: 13px; font-weight: bold;\">إجمالي الإيرادات</p>\n                    <h2 style=\"color: #2563eb; margin: 10px 0 0 0; font-size: 22px;\">{{ $json.totalSales }}</h2>\n                </td>\n                <td width=\"4%\"></td>\n                <td width=\"48%\" style=\"background-color: #f0fdf4; padding: 20px; border-radius: 12px; text-align: center; border: 1px solid #dcfce7;\">\n                    <p style=\"color: #166534; margin: 0; font-size: 13px; font-weight: bold;\">عدد العمليات</p>\n                    <h2 style=\"color: #16a34a; margin: 10px 0 0 0; font-size: 22px;\">{{ $json.ordersCount }}</h2>\n                </td>\n            </tr>\n        </table>\n    </div>\n\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 0 20px 20px 20px; border-radius: 0 0 15px 15px;\">\n        <table width=\"100%\" style=\"border-collapse: collapse; background-color: #fcfcfc; border-radius: 10px; border: 1px solid #f1f5f9;\">\n            <tr>\n                <td style=\"padding: 15px; color: #64748b; border-bottom: 1px solid #f1f5f9; vertical-align: top;\">🥇 المنتج الأكثر طلباً</td>\n                <td style=\"padding: 15px; color: #0f172a; font-weight: bold; text-align: left; border-bottom: 1px solid #f1f5f9;\">{{ $json.topProduct }}</td>\n            </tr>\n            <tr>\n                <td style=\"padding: 15px; color: #64748b; border-bottom: 1px solid #f1f5f9; vertical-align: top;\">📊 قائمة الـ 5 الأوائل</td>\n                <td style=\"padding: 15px; color: #3b82f6; font-size: 14px; text-align: left; border-bottom: 1px solid #f1f5f9; line-height: 1.8;\">\n                    {{ $json.top5Products }}\n                </td>\n            </tr>\n            <tr>\n                <td style=\"padding: 15px; color: #64748b; vertical-align: top;\">⏰ وقت الذروة</td>\n                <td style=\"padding: 15px; color: #f59e0b; font-weight: bold; text-align: left;\">{{ $json.peakHour }}</td>\n            </tr>\n        </table>\n\n        <div style=\"text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #f1f5f9;\">\n            <p style=\"color: #94a3b8; font-size: 12px; margin: 0;\">هذا التقرير تم توليده تلقائياً كجزء من مشروع التخرج</p>\n            <p style=\"color: #475569; font-size: 13px; font-weight: bold; margin: 5px 0;\"> Intelligent Data Analysis Automation System Team | MCI Academy 2026</p>\n        </div>\n    </div>\n</div>",
         "options": {}
       },
       "type": "n8n-nodes-base.emailSend",
       "typeVersion": 2.1,
       "position": [
-        2064,
-        592
+        1744,
+        480
       ],
       "id": "07ee2024-2eba-4312-a0ba-fded039fe149",
       "name": "Send Instant Smart Report",
@@ -133,15 +133,15 @@
     {
       "parameters": {
         "content": "# The end of Fast Track",
-        "height": 96,
+        "height": 80,
         "width": 390,
         "color": 4
       },
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        2352,
-        400
+        1888,
+        336
       ],
       "id": "9fac8c8b-3aa7-4b0d-a980-f897fe1c16b9",
       "name": "Sticky Note2"
@@ -173,8 +173,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        1152,
-        608
+        912,
+        496
       ],
       "id": "484bbf53-7647-4928-a1cd-0f4cd535243a",
       "name": "Data Validation & Security Gate"
@@ -190,8 +190,8 @@
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.5,
       "position": [
-        1488,
-        832
+        1344,
+        672
       ],
       "id": "0a5507e8-d8eb-4b1a-84ea-bba99659ddb3",
       "name": "API Response Handler"
@@ -420,8 +420,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        2320,
-        592
+        1952,
+        480
       ],
       "id": "637e264a-c051-4c24-985d-2ff16440ea1c",
       "name": "Sync Customer Activity to DB",
@@ -537,8 +537,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        928,
-        608
+        1168,
+        480
       ],
       "id": "1c69e17b-2935-49b4-8ea3-875a94a0b8c8",
       "name": "Data Formatter"
@@ -565,8 +565,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
       "position": [
-        2560,
-        592
+        2160,
+        480
       ],
       "id": "5c957719-021c-49d1-9d8d-8c155defbf01",
       "name": "HTTP Request"
@@ -605,7 +605,7 @@
       "main": [
         [
           {
-            "node": "Data Formatter",
+            "node": "Data Validation & Security Gate",
             "type": "main",
             "index": 0
           }
@@ -638,7 +638,7 @@
       "main": [
         [
           {
-            "node": "Calculate Quick Metrics",
+            "node": "Data Formatter",
             "type": "main",
             "index": 0
           }
@@ -656,7 +656,7 @@
       "main": [
         [
           {
-            "node": "Data Validation & Security Gate",
+            "node": "Calculate Quick Metrics",
             "type": "main",
             "index": 0
           }
@@ -702,7 +702,7 @@
     "saveDataSuccessExecution": "all",
     "saveManualExecutions": true
   },
-  "versionId": "201cfad4-8ac5-428d-a60c-94071f86eb36",
+  "versionId": "23d77375-b2f4-49c9-8a30-a08d29ec88fe",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "d24290936cec55ea2c6832a7a807a4f14cff997486995bdc7024b19c8694c9e7"

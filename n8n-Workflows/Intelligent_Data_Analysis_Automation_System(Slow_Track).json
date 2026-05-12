@@ -3,15 +3,15 @@
   "nodes": [
     {
       "parameters": {
-        "content": "# Smart Business Intelligence Reporting System\n\n## Graduation Project | MCI Academy 2026\n\n",
+        "content": "# Intelligent Data Analysis Automation System\n\n## Graduation Project | MCI Academy 2026\n\n",
         "width": 832,
         "color": 4
       },
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        16,
-        144
+        1344,
+        288
       ],
       "id": "ca416088-7891-4277-8be4-f29b2176decd",
       "name": "Sticky Note"
@@ -36,7 +36,7 @@
       "type": "n8n-nodes-base.summarize",
       "typeVersion": 1.1,
       "position": [
-        656,
+        592,
         656
       ],
       "id": "df206e0c-a386-4053-a029-f639372e7a2a",
@@ -53,7 +53,7 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 3,
       "position": [
-        1040,
+        960,
         656
       ],
       "id": "a3cf8ce5-a607-427f-813c-50098e73d863",
@@ -89,7 +89,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        1376,
+        1248,
         656
       ],
       "id": "2c2cb068-a3df-4ac7-97a0-3abe7dfb5e4e",
@@ -106,8 +106,8 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 3,
       "position": [
-        2176,
-        912
+        1952,
+        864
       ],
       "id": "df8b2016-f807-494e-8fbe-b6e0d0283e30",
       "name": "AI Agent5",
@@ -122,8 +122,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
       "typeVersion": 1,
       "position": [
-        2176,
-        1088
+        1952,
+        1008
       ],
       "id": "1604987b-7b12-4d51-bdb2-44d163ff31cd",
       "name": "Groq Chat Model1",
@@ -162,8 +162,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        2496,
-        912
+        2256,
+        864
       ],
       "id": "b98b1a05-c877-46a0-bac2-be321043f833",
       "name": "If5"
@@ -179,8 +179,8 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 3,
       "position": [
-        2752,
-        1040
+        2448,
+        1024
       ],
       "id": "f08cf1aa-a851-479c-9d94-aba1d94c8c4b",
       "name": "AI Agent6",
@@ -201,8 +201,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1.3,
       "position": [
-        2752,
-        1216
+        2448,
+        1200
       ],
       "id": "2de8654d-a059-4b36-8035-0b7c4d849d41",
       "name": "OpenAI Chat Model1",
@@ -241,8 +241,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        3056,
-        1040
+        2736,
+        1024
       ],
       "id": "d1fcfed3-63d9-46eb-8bfd-9450ad1206fc",
       "name": "If6"
@@ -256,8 +256,8 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        1616,
-        528
+        1440,
+        544
       ],
       "id": "d415e9f7-d87a-4750-a7d4-efa47418da95",
       "name": "Aggregate1"
@@ -287,7 +287,7 @@
       "type": "n8n-nodes-base.splitOut",
       "typeVersion": 1,
       "position": [
-        240,
+        224,
         656
       ],
       "id": "a75851ee-06cc-45fa-9d44-772b1f1e28d8",
@@ -352,7 +352,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        432,
+        400,
         656
       ],
       "id": "baf5718a-3a0c-4c32-b0b9-1112aafdaa40",
@@ -365,7 +365,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        848,
+        784,
         656
       ],
       "id": "6e4419b6-4512-4591-9789-0c33dcc5fbc4",
@@ -380,8 +380,8 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        2208,
-        1376
+        1968,
+        1200
       ],
       "id": "0bd052e9-3bf8-4604-b768-ddb15c84b269",
       "name": "Simple Memory"
@@ -414,8 +414,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        1936,
-        768
+        1728,
+        752
       ],
       "id": "aa3da819-71bb-47bf-af05-7e9378c6e7f2",
       "name": "If"
@@ -433,8 +433,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.3,
       "position": [
-        1040,
-        848
+        960,
+        832
       ],
       "id": "305cb0bf-9750-4ecc-a0ef-557bbcf8b75b",
       "name": "Anthropic Chat Model",
@@ -448,14 +448,14 @@
     {
       "parameters": {
         "content": "# Start Slow Track",
-        "height": 96,
-        "width": 320,
+        "height": 80,
+        "width": 304,
         "color": 4
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        16,
-        352
+        32,
+        528
       ],
       "typeVersion": 1,
       "id": "ce947cad-6ab8-4734-9e14-34683ece8f2d",
@@ -464,14 +464,14 @@
     {
       "parameters": {
         "content": "# End Slow Track",
-        "height": 96,
-        "width": 320,
+        "height": 80,
+        "width": 288,
         "color": 4
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        3280,
-        624
+        2976,
+        864
       ],
       "typeVersion": 1,
       "id": "ac40ac19-f6ff-45d4-9fd4-949a1623a1c7",
@@ -488,8 +488,8 @@
       "type": "n8n-nodes-base.emailSend",
       "typeVersion": 2.1,
       "position": [
-        1776,
-        528
+        1600,
+        544
       ],
       "id": "32725523-6689-4607-a905-15fbd01d03bd",
       "name": "Send Instant Smart Report",
@@ -509,8 +509,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        1616,
-        912
+        1440,
+        896
       ],
       "id": "9e3cbf28-bace-4b98-aeb1-b720ea68e335",
       "name": "Google Gemini Chat Model1",
@@ -532,8 +532,8 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 3,
       "position": [
-        1616,
-        736
+        1440,
+        752
       ],
       "id": "fc58ee7a-c986-48ea-9573-119b49ac579d",
       "name": "AI Agent",
@@ -549,8 +549,8 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        2176,
-        624
+        1952,
+        656
       ],
       "id": "723bf8c4-3680-47ab-97b0-81c81a559a0d",
       "name": "Aggregate"
@@ -564,8 +564,8 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        2752,
-        784
+        2448,
+        848
       ],
       "id": "c29dddf6-eba8-4664-8ca1-6c138a456cc3",
       "name": "Aggregate2"
@@ -579,8 +579,8 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        3264,
-        912
+        2960,
+        1008
       ],
       "id": "e1dd9a21-3fef-4851-b7b6-1560f458521c",
       "name": "Aggregate3"
@@ -589,15 +589,15 @@
       "parameters": {
         "fromEmail": "abdelwahabshandy@gmail.com",
         "toEmail": "={{ $node[\"Webhook(Slow Track)\"].json.body.email }}",
-        "subject": "📑 التقرير الاستراتيجي الشامل لمبيعاتك | Smart BI System",
-        "html": "={{ (function() {\n  // 1. الوصول للنص داخل المصفوفة الناتجة من Aggregate1\n  const rawOutput = $json.final_report_text[0].output;\n  \n  // 2. تنظيف النص وتحويله لـ Object\n  const cleanJson = rawOutput.replace(/```json|```/g, '').trim();\n  const data = JSON.parse(cleanJson);\n\n  // 3. بناء قالب الإيميل\n  return `\n  <div dir=\"rtl\" style=\"font-family: sans-serif; line-height: 1.6; color: #333; padding: 20px; background: #f4f7f6;\">\n    <div style=\"max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; border-top: 8px solid #1e40af;\">\n      <h2 style=\"color: #1e40af; text-align: center;\">📊 التقرير الاستراتيجي الشامل</h2>\n      \n      <p><strong>📝 الملخص التنفيذي:</strong><br>${data.summary}</p>\n\n      <h4 style=\"color: #1e40af; border-bottom: 1px solid #eee;\">🏆 تحليل المنتجات:</h4>\n      <p>${data.top_products.overview}</p>\n\n      <h4 style=\"color: #dc2626; border-bottom: 1px solid #eee;\">⚠️ المخاطر المرصودة:</h4>\n      <ul>\n        ${data.risks.map(r => `<li><strong>${r.risk}:</strong> ${r.details}</li>`).join('')}\n      </ul>\n\n      <div style=\"background: #1e40af; color: white; padding: 15px; border-radius: 8px;\">\n        <h4 style=\"margin-top: 0;\">💡 التوصيات المقترحة:</h4>\n        ${data.recommendations.map(rec => `• <strong>${rec.recommendation}:</strong> ${rec.action}`).join('<br><br>')}\n      </div>\n\n      <p style=\"text-align: center; font-size: 11px; color: #999; margin-top: 20px;\">تم التوليد آلياً بواسطة Smart BI System</p>\n    </div>\n  </div>\n  `;\n})() }}",
+        "subject": "📑 التقرير الاستراتيجي الشامل لمبيعاتك | Intelligent Data Analysis Automation System",
+        "html": "={{ (function() {\n  // 1. الوصول للنص داخل المصفوفة الناتجة من Aggregate1\n  const rawOutput = $json.final_report_text[0].output;\n  \n  // 2. تنظيف النص وتحويله لـ Object\n  const cleanJson = rawOutput.replace(/```json|```/g, '').trim();\n  const data = JSON.parse(cleanJson);\n\n  // 3. بناء قالب الإيميل\n  return `\n  <div dir=\"rtl\" style=\"font-family: sans-serif; line-height: 1.6; color: #333; padding: 20px; background: #f4f7f6;\">\n    <div style=\"max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; border-top: 8px solid #1e40af;\">\n      <h2 style=\"color: #1e40af; text-align: center;\">📊 التقرير الاستراتيجي الشامل</h2>\n      \n      <p><strong>📝 الملخص التنفيذي:</strong><br>${data.summary}</p>\n\n      <h4 style=\"color: #1e40af; border-bottom: 1px solid #eee;\">🏆 تحليل المنتجات:</h4>\n      <p>${data.top_products.overview}</p>\n\n      <h4 style=\"color: #dc2626; border-bottom: 1px solid #eee;\">⚠️ المخاطر المرصودة:</h4>\n      <ul>\n        ${data.risks.map(r => `<li><strong>${r.risk}:</strong> ${r.details}</li>`).join('')}\n      </ul>\n\n      <div style=\"background: #1e40af; color: white; padding: 15px; border-radius: 8px;\">\n        <h4 style=\"margin-top: 0;\">💡 التوصيات المقترحة:</h4>\n        ${data.recommendations.map(rec => `• <strong>${rec.recommendation}:</strong> ${rec.action}`).join('<br><br>')}\n      </div>\n\n      <p style=\"text-align: center; font-size: 11px; color: #999; margin-top: 20px;\">تم التوليد آلياً بواسطة Intelligent Data Analysis Automation System</p>\n    </div>\n  </div>\n  `;\n})() }}",
         "options": {}
       },
       "type": "n8n-nodes-base.emailSend",
       "typeVersion": 2.1,
       "position": [
-        2336,
-        624
+        2112,
+        656
       ],
       "id": "9483720d-7d4c-4c6f-be54-713203dee7a3",
       "name": "Send Instant Smart Report1",
@@ -620,8 +620,8 @@
       "type": "n8n-nodes-base.emailSend",
       "typeVersion": 2.1,
       "position": [
-        2928,
-        784
+        2624,
+        848
       ],
       "id": "65a100a7-b35a-4405-81af-d273e3464bd8",
       "name": "Send Instant Smart Report2",
@@ -644,8 +644,8 @@
       "type": "n8n-nodes-base.emailSend",
       "typeVersion": 2.1,
       "position": [
-        3440,
-        800
+        3136,
+        1008
       ],
       "id": "02849075-f143-48fb-9848-65b67acb2094",
       "name": "Send Instant Smart Report3",
@@ -962,7 +962,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "9da3117b-3265-4b92-ae5c-d960de7dae86",
+  "versionId": "11a7c869-8c7b-4ab7-8b7b-bcd6f13b1212",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "d24290936cec55ea2c6832a7a807a4f14cff997486995bdc7024b19c8694c9e7"
