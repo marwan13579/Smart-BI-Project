@@ -191,7 +191,7 @@ Smart-BI-Project/
 
 **Howarah Ali Abdo**
 
-**Marwan Singer**
+**Marwan Sayed Singer**
 
 **Sanaa Ahmed Mohamed** 
 
